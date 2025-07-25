@@ -1,2 +1,21 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Exclude C and C++ source files
+*.c linguist-vendored
+*.h linguist-vendored
+*.cpp linguist-vendored
+*.cc linguist-vendored
+*.cxx linguist-vendored
+*.hpp linguist-vendored
+*.hh linguist-vendored
+*.hxx linguist-vendored
+
+# Exclude ShaderLab files
+*.shader linguist-vendored
+
+# Exclude HLSL files
+*.hlsl linguist-vendored
+*.cginc linguist-vendored
+
+# Exclude GAP files
+*.g linguist-vendored
