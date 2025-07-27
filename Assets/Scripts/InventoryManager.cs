@@ -35,8 +35,8 @@ public class InventoryManager : MonoBehaviour
                 {
                     leftOverItems = AddItem(itemName, leftOverItems, itemSprite, itemDescription);
 
-                    return leftOverItems;
                 }
+                    return leftOverItems;
             }
         }
         return quantity;
