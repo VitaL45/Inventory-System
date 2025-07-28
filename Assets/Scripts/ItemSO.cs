@@ -11,21 +11,26 @@ public class ItemSO : ScriptableObject
     public AttributesToChange attributesToChange = new AttributesToChange();
     public int amountToChangeAttribute;
 
-    public void UseItem()
+    public bool UseItem()
     {
         if (statToChange == StatToChange.health)
         {
+            if (Utility.health >= Utility.maxStat)
+            {
+                return false;
+            }
             Utility.health += amountToChangeStat;
-            Debug.Log(Utility.health);
+            Debug.Log("Heath = " + Utility.health);
         }
-        if (statToChange == StatToChange.health)
+        else if (statToChange == StatToChange.stamina)
         {
             Utility.stamina += amountToChangeStat;
         }
-        if (statToChange == StatToChange.health)
+        else if (statToChange == StatToChange.mana)
         {
             Utility.mana += amountToChangeStat;
         }
+        return true;
     }
 
     public enum StatToChange

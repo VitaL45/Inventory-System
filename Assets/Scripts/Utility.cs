@@ -6,6 +6,7 @@ public class Utility : MonoBehaviour
 {
     public static int health, stamina, mana;
     public static int strength, defence, agility;
+    public static int maxStat = 20;
 
     public static void Start()
     {
