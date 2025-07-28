@@ -11,6 +11,7 @@ public class player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Utility.Start();
     }
 
     // Update is called once per frame

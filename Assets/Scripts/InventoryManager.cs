@@ -7,6 +7,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     private bool menuActivated;
     public ItemSlot[] itemSlot;
+    public ItemSO[] itemSOs;
 
     void Update()
     {
@@ -24,6 +25,17 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public void UseItem(string itemName)
+    {
+        for (int i = 0; i < itemSOs.Length; i++)
+        {
+            if (itemSOs[i].itemName == itemName)
+            {
+                itemSOs[i].UseItem();
+            }
+        }
+    }
+
     public int AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
     {
         for (int i = 0; i < itemSlot.Length; i++)
@@ -34,9 +46,8 @@ public class InventoryManager : MonoBehaviour
                 if (leftOverItems > 0)
                 {
                     leftOverItems = AddItem(itemName, leftOverItems, itemSprite, itemDescription);
-
                 }
-                    return leftOverItems;
+                return leftOverItems;
             }
         }
         return quantity;

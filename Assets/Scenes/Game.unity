@@ -482,6 +482,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
+--- !u!1 &452476430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 452476432}
+  - component: {fileID: 452476431}
+  m_Layer: 0
+  m_Name: UtilityVars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &452476431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452476430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bdbe28b6078954d9ec5c5d76fa5930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &452476432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452476430}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 994.0776, y: 602.59607, z: 2.571986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &466904520 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1632249304853049439, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
@@ -1270,8 +1314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Apple
-  quantity: 1
+  quantity: 5
   sprite: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
+  itemDescription: Can apple a day keeps the doctor away
 --- !u!224 &799592260 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1632249304853049439, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
@@ -2920,6 +2965,8 @@ MonoBehaviour:
   - {fileID: 853204864}
   - {fileID: 2140106578}
   - {fileID: 972861009}
+  itemSOs:
+  - {fileID: 11400000, guid: f04054164ddde554c8ea97e06835f138, type: 2}
 --- !u!224 &1733194768 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1632249304853049439, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
@@ -3742,6 +3789,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4161592955496578466, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
+      propertyPath: isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161592955496578466, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
+      propertyPath: quantity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161592955496578466, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
+      propertyPath: itemDescription
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8526876742862911200, guid: 8eb402d5a5727114fb0bed9bd7948362, type: 3}
       propertyPath: m_Name
       value: ItemSlot
@@ -3760,3 +3819,4 @@ SceneRoots:
   - {fileID: 1973793929}
   - {fileID: 1016498428}
   - {fileID: 796289177}
+  - {fileID: 452476432}
