@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Apple
   statToChange: 1
-  amountToChangeStat: 5
+  amountToChangeStat: 1
   attributesToChange: 1
   amountToChangeAttribute: 0
